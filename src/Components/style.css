@@ -1,0 +1,787 @@
+.MainContent {
+    background: linear-gradient(#648df7, #5711a8);
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.navbar {
+    height: 70px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: linear-gradient(#648df7, #5711a8);
+    background-attachment: fixed;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.085);
+}
+
+.navLogo {
+    width: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    display: inline;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+.searchBox {
+    width: 250px;
+    height: 27px;
+    border-radius: 19px;
+    border: 2px solid rgb(53, 53, 255);
+    padding-left: 14px;
+    font-size: 17px;
+}
+
+.searchBox:focus {
+    outline: none;
+    border-color: linear-gradient(#648df7, #5711a8);
+}
+
+.search {
+    display: inline;
+    position: relative;
+    top: 20px;
+    margin-right: 50px;
+    float: right;
+}
+
+.searchButton {
+    background-color: #3933aa;
+    border: 3px solid #3933aa;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    width: 122px;
+    height: 30px;
+    border-radius: 26px;
+    margin-left: 11px;
+    cursor: pointer;
+}
+
+/* Dialog Box */
+
+.dialogBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.dialog {
+    width: 500px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.17);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.78);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 13px;
+    margin: 10px;
+}
+
+.dSearchInput {
+    width: 250px;
+    height: 27px;
+    border-radius: 19px;
+    border: 2px solid rgb(53, 53, 255);
+    padding-left: 14px;
+    font-size: 17px;
+}
+
+.dSearchInput:focus {
+    outline: none;
+    border-color: linear-gradient(#648df7, #5711a8);
+}
+
+.dSearchButton {
+    background-color: #3933aa;
+    border: 3px solid #3933aa;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    height: 30px;
+    border-radius: 26px;
+    margin-left: 11px;
+    cursor: pointer;
+    padding: 0px 15px 0px 15px;
+}
+
+.dSearchByCity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.or {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dLocation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dInfo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.searchIcon {
+    width: 22px;
+    height: 22px;
+}
+
+.searchIconCont {
+    display: none;
+}
+
+.expandingSearchCont {
+    display: none;
+}
+
+/* Current Weather ForeCast */
+
+.placeHolder {
+    width: 25px;
+    height: 25px;
+}
+
+.currcityname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.currLastUpdated {
+    text-align: center;
+}
+
+.currContainer {
+    width: 70vw;
+    margin: auto;
+    height: max-content;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.currLeftBox {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.currLeftBox1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 29px;
+}
+
+.currImage {
+    width: 130px;
+    height: 130px;
+}
+
+.currTemp {
+    font-size: 45px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thermometer {
+    width: 50px;
+}
+
+.currFeelsLike {
+    color: rgb(220, 220, 220);
+    text-align: center;
+    font-size: 19px;
+    margin-left: 50px;
+}
+
+.currMinMax {
+    margin-left: 50px;
+    text-align: center;
+    font-size: 17px;
+    color: rgb(220, 220, 220);
+}
+
+.currRightBox {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currDataIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+
+.currData {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.currSunrise {
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+/* Today's ForeCast */
+.todayForecast {
+    width: 70vw;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.todayCont {
+    padding-top: 15px;
+    border-top: 2px solid white;
+    height: max-content;
+}
+
+.todayBox {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    height: max-content;
+    padding-bottom: 10px;
+}
+
+.todayItems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.147);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.57);
+}
+
+/* Daily Forecast */
+.foreCastContainer {
+    width: 70%;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.foreCont {
+    padding-top: 15px;
+    border-top: 2px solid white;
+    height: max-content;
+}
+
+.foreBox {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    height: max-content;
+    padding-bottom: 10px;
+}
+
+.foreItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.147);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.57);
+}
+
+/* Media Queries */
+@media only screen and (max-width:600px) {
+    .dialog {
+        height: 250px;
+        margin: 15px;
+        padding: 5px;
+    }
+
+    .dInfo {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .dSearchInput {
+        width: 210px;
+        height: 24px;
+        font-size: 15px;
+    }
+
+    .dSearchByCity {
+        gap: 0px;
+    }
+
+    .dSearchButton {
+        font-size: 12px;
+    }
+
+    .navbar {
+        height: 50px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .searchIconCont {
+        display: inline;
+        float: right;
+        position: relative;
+        top: 12px;
+        right: 10px;
+    }
+
+    .expandingSearchCont {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 21px;
+    }
+
+    .searchBox {
+        width: 170px;
+        font-size: 15px;
+    }
+
+    .currContainer {
+        flex-direction: column;
+    }
+
+    .currLeftBox {
+        width: 80vw;
+    }
+
+    .currRightBox {
+        width: 80vw;
+    }
+
+    .currcityname {
+        font-size: 19px;
+    }
+
+    .currLastUpdated {
+        font-size: 13px;
+    }
+
+    .currImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .currLeftBox1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .currFeelsLike {
+        font-size: 15px;
+    }
+
+    .currMinMax {
+        font-size: 15px;
+    }
+
+    .currSunrise {
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    .currData {
+        font-size: 17px;
+    }
+
+    .currTemp {
+        font-size: 37px;
+    }
+
+    .currContainer {
+        width: 95vw;
+    }
+
+    .todayBox {
+        grid-template-columns: repeat(5, 150px);
+        overflow-x: scroll;
+    }
+
+    .todayForecast {
+        width: 95vw;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .todayItems {
+        height: 150px;
+    }
+
+    .todImages {
+        height: 80px;
+    }
+
+    .foreBox {
+        grid-template-columns: repeat(5, 150px);
+        overflow-x: scroll;
+    }
+
+    .foreCastContainer {
+        width: 95vw;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .foreImages {
+        height: 80px;
+    }
+
+    .foreItem {
+        height: 150px;
+    }
+
+    .title {
+        font-size: 20px;
+        left: 10px;
+    }
+
+    .navLogo {
+        width: 27px;
+    }
+}
+
+
+
+@media only screen and (min-width:600px) and (max-width:700px) {
+    .title {
+        left: 15px;
+    }
+
+    .expandingSearchCont {
+        display: none;
+    }
+
+    .search {
+        margin-right: 20px;
+    }
+
+    .foreCastContainer {
+        width: 97vw;
+    }
+
+    .todayForecast {
+        width: 97vw;
+    }
+
+    .currContainer {
+        width: 97vw;
+    }
+
+    .currcityname {
+        font-size: 17px;
+    }
+
+    .placeHolder {
+        width: 20px;
+        height: 20px;
+    }
+
+    .currLastUpdated {
+        font-size: 12px;
+    }
+
+    .currImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .currLeftBox1 {
+        font-size: 23px;
+    }
+
+    .currTemp {
+        font-size: 32px;
+    }
+
+    .thermometer {
+        width: 35px;
+    }
+
+    .currFeelsLike {
+        font-size: 11px;
+    }
+
+    .currMinMax {
+        font-size: 11px;
+    }
+
+    .currSunrise {
+        font-size: 11px;
+    }
+
+    .currDataIcon {
+        width: 13px;
+        height: 13px;
+        margin-right: 2px;
+    }
+
+    .currData {
+        font-size: 13px;
+        margin-top: 3px;
+    }
+
+    .todayForecast {
+        font-size: 15px;
+    }
+
+    .todImages {
+        width: 70px;
+    }
+
+    .foreCastContainer {
+        font-size: 15px;
+    }
+
+    .foreImages {
+        width: 70px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .navLogo {
+        width: 30px;
+    }
+
+    .navbar {
+        height: 55px;
+    }
+
+    .searchBox {
+        width: 200px;
+        height: 23px;
+        font-size: 15px;
+    }
+
+    .searchButton {
+        height: 25.5px;
+        font-size: 15px;
+    }
+
+    .search {
+        top: 15px
+    }
+}
+
+
+
+@media only screen and (min-width:700px) and (max-width:930px) {
+    .title {
+        left: 15px;
+    }
+
+    .expandingSearchCont {
+        display: none;
+    }
+
+    .search {
+        margin-right: 20px;
+    }
+
+    .foreCastContainer {
+        width: 95vw;
+    }
+
+    .todayForecast {
+        width: 95vw;
+    }
+
+    .currContainer {
+        width: 95vw;
+    }
+
+    .currcityname {
+        font-size: 18px;
+    }
+
+    .placeHolder {
+        width: 20px;
+        height: 20px;
+    }
+
+    .currLastUpdated {
+        font-size: 14px;
+    }
+
+    .currImage {
+        width: 110px;
+        height: 110px;
+    }
+
+    .currLeftBox1 {
+        font-size: 25px;
+    }
+
+    .currTemp {
+        font-size: 35px;
+    }
+
+    .thermometer {
+        width: 40px;
+    }
+
+    .currFeelsLike {
+        font-size: 15px;
+        margin-left: 40px;
+    }
+
+    .currMinMax {
+        font-size: 15px;
+        margin-left: 40px;
+    }
+
+    .currSunrise {
+        font-size: 15px;
+        margin-left: 40px;
+    }
+
+    .currDataIcon {
+        width: 15px;
+        height: 15px;
+        margin-right: 2px;
+    }
+
+    .currData {
+        font-size: 15px;
+        margin-top: 3px;
+    }
+
+    .todayForecast {
+        font-size: 15px;
+    }
+
+    .todImages {
+        width: 85px;
+    }
+
+    .foreCastContainer {
+        font-size: 15px;
+    }
+
+    .foreImages {
+        width: 85px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .navLogo {
+        width: 30px;
+    }
+
+    .navbar {
+        height: 55px;
+    }
+
+    .searchBox {
+        width: 200px;
+        height: 23px;
+        font-size: 15px;
+    }
+
+    .searchButton {
+        height: 25.5px;
+        font-size: 15px;
+    }
+
+    .search {
+        top: 15px
+    }
+}
+
+
+
+@media only screen and (min-width:930px) and (max-width:1110px) {
+    .expandingSearchCont {
+        display: none;
+    }
+
+    .search {
+        margin-right: 20px;
+    }
+
+    .foreCastContainer {
+        width: 95vw;
+    }
+
+    .todayForecast {
+        width: 95vw;
+    }
+
+    .currContainer {
+        width: 95vw;
+    }
+}
+
+
+
+@media only screen and (min-width:1110px) and (max-width:1271px) {
+    .expandingSearchCont {
+        display: none;
+    }
+
+    .search {
+        margin-right: 20px;
+    }
+
+    .foreCastContainer {
+        width: 80vw;
+    }
+
+    .todayForecast {
+        width: 80vw;
+    }
+
+    .currContainer {
+        width: 80vw;
+    }
+}

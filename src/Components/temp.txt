@@ -1,0 +1,15 @@
+23.022505
+72.5713621
+daba80bd96939a26f9d93fd2cf4308fe
+
+ForeCast: http://api.openweathermap.org/data/2.5/forecast?lat=23.022505&lon=72.5713621&appid=daba80bd96939a26f9d93fd2cf4308fe
+
+Pollution: http://api.openweathermap.org/data/2.5/air_pollution?lat=23.022505&lon=72.5713621&appid=daba80bd96939a26f9d93fd2cf4308fe
+
+Weather Map: https://tile.openweathermap.org/map/temp_new/0/0/0.png?appid=daba80bd96939a26f9d93fd2cf4308fe
+
+GeoCoding: http://api.openweathermap.org/geo/1.0/direct?q=delhi&appid=daba80bd96939a26f9d93fd2cf4308fe
+
+// eslint-disable-line react-hooks/exhaustive-deps
+
+°
